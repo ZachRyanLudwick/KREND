@@ -1,13 +1,15 @@
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import plasters from './assets/plastering.png'
 import './css/cards.css'
 
 function App() {
+
   return(
     <div className='hero'>
       <section className="home">
         <div className="container">
-          <h1>KRender</h1>
+          <h1>K-Render UK</h1>
           <h2>The UK's Finest In Profressional Rendering.</h2>
         </div>
       </section>
@@ -59,7 +61,7 @@ function App() {
                   and meticulous finishing for long-lasting results.
                 </p>
               </div>
-              <label className="read-more-button" htmlFor="read-more-1">Read More</label>
+              <label className="read-more-button" htmlFor="read-more-1"></label>
             </div>
           </div>
 
@@ -81,7 +83,7 @@ function App() {
                   and proven techniques to ensure weather resistance and longevity.
                 </p>
               </div>
-              <label className="read-more-button" htmlFor="read-more-2">Read More</label>
+              <label className="read-more-button" htmlFor="read-more-2"></label>
             </div>
           </div>
 
@@ -103,7 +105,7 @@ function App() {
                   perfect results that last for years.
                 </p>
               </div>
-              <label className="read-more-button" htmlFor="read-more-3">Read More</label>
+              <label className="read-more-button" htmlFor="read-more-3"></label>
             </div>
           </div>
 
@@ -125,7 +127,7 @@ function App() {
                   traditional and modern plastering techniques.
                 </p>
               </div>
-              <label className="read-more-button" htmlFor="read-more-4">Read More</label>
+              <label className="read-more-button" htmlFor="read-more-4"></label>
             </div>
           </div>
 
@@ -147,7 +149,7 @@ function App() {
                   retail spaces, and industrial facilities.
                 </p>
               </div>
-              <label className="read-more-button" htmlFor="read-more-5">Read More</label>
+              <label className="read-more-button" htmlFor="read-more-5"></label>
             </div>
           </div>
 
@@ -169,14 +171,11 @@ function App() {
                   of your rendered surfaces and maintains their appearance.
                 </p>
               </div>
-              <label className="read-more-button" htmlFor="read-more-6">Read More</label>
+              <label className="read-more-button" htmlFor="read-more-6"></label>
             </div>
           </div>
         </div>
       </section>
-  
-
-
     </div>
   )
 }

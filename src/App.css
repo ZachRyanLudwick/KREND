@@ -8,10 +8,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -52,7 +48,7 @@ h1, h2 {
 .container h1 {
     font-size: 45px;
     opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
+    animation: fadeInUp 1.2s ease forwards;
     animation-delay: 1.9s; /* Appears first */
 }
 
