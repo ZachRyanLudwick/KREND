@@ -54,16 +54,16 @@ const home = () => {
               </p>
               <input type="checkbox" id="read-more-1" className="read-more-toggle" hidden />
               <div className="read-more-content">
-                <p>
-                  We specialize in both thin-coat and thick-coat K-rend applications, 
-                  offering various textures and colors to match your property's style.
-                  The benefits of K-Rendering are 
-                </p>
-                <ul>
-                    <li>Enhanced aesthetic appeal</li>
-                    <li>Improved insulation protection</li>
-                    <li>Long-lasting durability</li>
-                  </ul>
+                <p>The benefits of K-Rendering include:</p>
+                    <ul>
+                        <li>Enhanced aesthetic appeal with a modern, smooth finish</li>
+                        <li>Superior weather protection against rain and moisture</li>
+                        <li>Improved thermal insulation properties</li>
+                        <li>Crack-resistant and low maintenance</li>
+                        <li>Available in a wide range of colors and textures</li>
+                        <li>Increases property value and curb appeal</li>
+                        <li>Environmental friendly and sustainable solution</li>
+                    </ul>
               </div>
               <label className="read-more-button" htmlFor="read-more-1"></label>
             </div>

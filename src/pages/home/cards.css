@@ -51,7 +51,7 @@
   margin-bottom: 15px;
   color: #696767;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 1.9s ease;
 }
 
 .read-more-toggle:checked ~ .read-more-content {
@@ -65,7 +65,7 @@
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
   margin-top: auto;
   align-self: flex-start;
 }
@@ -84,6 +84,36 @@
 
 .read-more-button::after {
   content: "Read More";
+}
+
+/* READ MORE CONTENT */
+
+.read-more-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.read-more-content li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.read-more-content li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3a3a3a; /* Or any accent color that matches your theme */
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+/* Optional hover effect */
+.read-more-content li:hover {
+  transform: translateX(5px);
+  transition: transform 0.2s ease;
 }
 
 /* Responsive Design */
