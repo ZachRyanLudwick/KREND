@@ -56,9 +56,13 @@ function App() {
               <div className="read-more-content">
                 <p>
                   We specialize in both thin-coat and thick-coat K-rend applications, 
-                  offering various textures and colors to match your property's style. 
-                  Our process includes thorough surface preparation, professional application, 
-                  and meticulous finishing for long-lasting results.
+                  offering various textures and colors to match your property's style.
+                  The benefits of K-Rendering are 
+                  <ul>
+                    <li>Enhanced aesthetic appeal</li>
+                    <li>Improved insulation protection</li>
+                    <li>Long-lasting durability</li>
+                  </ul>
                 </p>
               </div>
               <label className="read-more-button" htmlFor="read-more-1"></label>
