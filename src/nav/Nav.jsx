@@ -24,13 +24,32 @@ const Nav = () => {
                 <li><a href="">Get A Quote</a></li>
             </ul>
         </div>
-        <div className="mb-nav">
-          <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
+
+
+        <div className="mobile-nav">
+        <ul>
+          <li>
+            <a href="/">
+              <span className="label">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="/services">
+              <span className="label">Services</span>
+            </a>
+          </li>
+          <li>
+          <a href="/about">
+              <span className="label">About</span>
+            </a>
+          </li>
+          <li>
+            <a href="/contact">
+              <span className="label">Get A Quote</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   )
 }

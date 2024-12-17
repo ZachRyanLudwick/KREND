@@ -25,7 +25,7 @@
 
 .home {
     padding: 20px;
-    height: 750px;
+    min-height: 100vh; /* This ensures full height coverage */
     padding-top: 10%;
     width: 100%;
     background: url("../../assets/krend2.jpg") no-repeat;
@@ -39,7 +39,7 @@ h1, h2 {
 }
 
 .container {
-    padding-top: 6%;
+    padding-top: 10vh;
     display: grid;
     place-content: center;
     text-align: center;
@@ -123,6 +123,18 @@ h1, h2 {
 }
 
 @media (max-width: 950px) {
+
+    .container {
+        padding-top: 200px;
+    }
+    
+    .home {
+        padding: 15px;
+        padding-top: 5%;
+        background-attachment: scroll; /* Better performance on mobile */
+        background-position: center center;
+    }
+
     .content-section {
         flex-direction: column;
         margin-left: 1rem;

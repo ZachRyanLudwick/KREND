@@ -2,6 +2,11 @@ import React from 'react'
 import './home.css'
 import './cards.css'
 
+import krendering from '../../assets/cards/K-Render-Specialists.png'
+import extplastering from '../../assets/cards/external-plastering.jpg'
+import coloredRendering from '../../assets/cards/colored-rendering.jpg'
+import internalPlastering from '../../assets/cards/plastering-inside.jpg'
+
 import plasters from '../../assets/plasters.jpg'
 
 const home = () => {
@@ -43,7 +48,7 @@ const home = () => {
         <div className="services-grid">
           <div className="service-card">
             <div className="service-image">
-              <img src="/path-to-krender-image.jpg" alt="K-Rendering Service" loading="lazy" />
+              <img src={krendering} alt="K-Rendering Service" loading="lazy" />
             </div>
             <div className="service-content">
               <h3>K-Rendering</h3>
@@ -71,7 +76,7 @@ const home = () => {
 
           <div className="service-card">
             <div className="service-image">
-              <img src="/path-to-external-plastering.jpg" alt="External Plastering Service" loading="lazy" />
+              <img src={extplastering} alt="External Plastering Service" loading="lazy" />
             </div>
             <div className="service-content">
               <h3>External Plastering</h3>
@@ -85,6 +90,15 @@ const home = () => {
                   Our external plastering services include scratch coat application, 
                   finishing coats, and decorative textures. We use premium materials 
                   and proven techniques to ensure weather resistance and longevity.
+                  <ul>
+                        <li>Enhanced aesthetic appeal with a modern, smooth finish</li>
+                        <li>Protection against weather elements like rain and wind</li>
+                        <li>Increased durability and strength of exterior walls</li>
+                        <li>Crack-resistant and low maintenance</li>
+                        <li>Increased property value with a well-maintained exterior</li>
+                        <li>Added fire resistance to the building structure</li>
+                        <li>Environmental friendly and sustainable solution</li>
+                    </ul>
                 </p>
               </div>
               <label className="read-more-button" htmlFor="read-more-2"></label>
@@ -93,7 +107,7 @@ const home = () => {
 
           <div className="service-card">
             <div className="service-image">
-              <img src="/path-to-colored-rendering.jpg" alt="Colored Rendering Service" loading="lazy" />
+              <img src={coloredRendering} alt="Colored Rendering Service" loading="lazy" />
             </div>
             <div className="service-content">
               <h3>Colored Rendering</h3>
@@ -108,6 +122,13 @@ const home = () => {
                   We offer color matching, sample testing, and expert application to ensure 
                   perfect results that last for years.
                 </p>
+                <ul>
+                  <li>Provides a wide range of color options for a personalized, aesthetic look</li>
+                  <li>Reduces the need for frequent painting, as the color is embedded in the render</li>
+                  <li>Adds an extra layer of protection against the elements</li>
+                  <li>Helps with UV resistance, preventing fading over time</li>
+                  <li>Enhances the durability of the exterior surface</li>
+                </ul>
               </div>
               <label className="read-more-button" htmlFor="read-more-3"></label>
             </div>
@@ -115,7 +136,7 @@ const home = () => {
 
           <div className="service-card">
             <div className="service-image">
-              <img src="/path-to-interior-plastering.jpg" alt="Interior Plastering Service" loading="lazy" />
+              <img src={internalPlastering} alt="Interior Plastering Service" loading="lazy" />
             </div>
             <div className="service-content">
               <h3>Interior Plastering</h3>
@@ -130,54 +151,18 @@ const home = () => {
                   plastering service delivers flawless results. We specialize in both 
                   traditional and modern plastering techniques.
                 </p>
+                <ul>
+                  <li>Creates a smooth, even surface for painting or other finishes</li>
+                  <li>Improves the overall aesthetic and appeal of interior spaces</li>
+                  <li>Easy to repair if damaged, maintaining a clean look over time</li>
+                  <li>Helps regulate indoor humidity and reduces the risk of mold growth</li>
+                  <li>Improves indoor air quality by reducing dust and allergens trapped in porous surfaces</li>
+                </ul>
               </div>
               <label className="read-more-button" htmlFor="read-more-4"></label>
             </div>
           </div>
-
-          <div className="service-card">
-            <div className="service-image">
-              <img src="/path-to-commercial-rendering.jpg" alt="Commercial Rendering Service" loading="lazy" />
-            </div>
-            <div className="service-content">
-              <h3>Commercial Rendering</h3>
-              <p className="service-preview">
-                Large-scale rendering solutions for commercial properties. Our team handles 
-                projects of any size with professional efficiency and attention to detail.
-              </p>
-              <input type="checkbox" id="read-more-5" className="read-more-toggle" hidden />
-              <div className="read-more-content">
-                <p>
-                  We provide comprehensive commercial rendering services, including project 
-                  planning, execution, and maintenance. Our experience includes office buildings, 
-                  retail spaces, and industrial facilities.
-                </p>
-              </div>
-              <label className="read-more-button" htmlFor="read-more-5"></label>
-            </div>
-          </div>
-
-          <div className="service-card">
-            <div className="service-image">
-              <img src="/path-to-maintenance.jpg" alt="Maintenance & Repair Service" loading="lazy" />
-            </div>
-            <div className="service-content">
-              <h3>Maintenance & Repair</h3>
-              <p className="service-preview">
-                Professional maintenance and repair services for rendered surfaces. Keep your 
-                property looking its best with our expert maintenance solutions.
-              </p>
-              <input type="checkbox" id="read-more-6" className="read-more-toggle" hidden />
-              <div className="read-more-content">
-                <p>
-                  Our maintenance services include crack repair, patch matching, cleaning, 
-                  and protective coating applications. Regular maintenance extends the life 
-                  of your rendered surfaces and maintains their appearance.
-                </p>
-              </div>
-              <label className="read-more-button" htmlFor="read-more-6"></label>
-            </div>
-          </div>
+          
         </div>
       </section>
     </div>

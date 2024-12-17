@@ -9,7 +9,6 @@ const Footer = () => {
         <h3>K-Render UK</h3>
         <p>The UK's Finest In Professional Rendering</p>
         <div className="contact-info">
-          <p>📱 Phone: [Your Phone Number]</p>
           <p>✉️ Email: info@krender.co.uk</p>
         </div>
       </div>
@@ -27,18 +26,9 @@ const Footer = () => {
       </div>
 
       <div className="footer-section">
-        <h3>Service Areas</h3>
-        <p>Serving the UK with professional rendering services</p>
+        <h3>Where We Operate</h3>
+        <p>We operate everywher in the UK serving professional rendering services</p>
         <p>Available for both residential and commercial projects</p>
-      </div>
-
-      <div className="footer-section">
-        <h3>Connect With Us</h3>
-        <div className="social-links">
-          <a href="#" aria-label="Facebook"><i className="fab fa-facebook"></i></a>
-          <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin"></i></a>
-        </div>
       </div>
     </div>
     
