@@ -1,3 +1,130 @@
-.hero {
-    height: 1000px;
+.contact-hero {
+    background: url('../../assets/construction-plaster_upscaled.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    position: relative; 
 }
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 11rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
+  
+  .contact-info {
+    flex: 1;
+  }
+  
+  .contact-info h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: #f9f9f9;
+  }
+  
+  .contact-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f9f9f9;
+  }
+  
+  .contact-form {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background-color: white;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    /* SAFARI SUPPORT */
+    
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+  }
+
+  .form-group:has(select)::after {
+    content: '▼';
+    font-size: 0.8rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #636363;
+  }
+  
+  .form-group select {
+    padding: 0.8rem;
+    background-color: white;
+    color: #333;
+  }
+
+  .form-group select::-ms-expand {
+    display: none;
+  }
+
+
+  button {
+    background: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    float: right;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .contact-info,
+    .contact-form {
+      width: 100%;
+    }
+
+    .form-group select {
+        font-size: 16px; /* Prevents zoom on mobile */
+    }
+  }

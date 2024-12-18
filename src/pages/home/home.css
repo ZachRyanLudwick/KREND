@@ -19,8 +19,23 @@
     }
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
 .hero {
     background-color: #f9f9f9;
+    flex: 1;
 }
 
 .home {

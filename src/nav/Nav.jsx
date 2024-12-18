@@ -18,10 +18,10 @@ const Nav = () => {
                 <a href="/"><h2>K-Render UK</h2></a>
             </div>
             <ul className="nav-links">
-                <li><a href="">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Who We Are</a></li>
-                <li><a href="">Get A Quote</a></li>
+                <li><a href="/contact">Get A Quote</a></li>
             </ul>
         </div>
 

@@ -1,9 +1,14 @@
+
 .footer {
   background-color: #1a1a1a;
   color: #f9f9f9;
   padding: 4rem 0 1rem 0;
   margin-top: 1rem;
   width: 100%;
+  position: relative;
+  z-index: 1; 
+  clear: both;
+  bottom: 0;
 }
 
 .footer-content {

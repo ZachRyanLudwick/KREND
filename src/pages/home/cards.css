@@ -1,6 +1,11 @@
 .services-section {
     padding: 4rem 2rem;
     background: #f8f9fa;
+    position: relative; /* Add this */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
 }
 
 .services-title {
@@ -18,6 +23,8 @@
   margin: 0 auto;
   align-items: start;
   grid-auto-rows: min-content;
+  position: relative; /* Add this */
+  z-index: 0; /* Add this */
 }
 
 .service-card {
@@ -129,13 +136,16 @@
   transition: transform 0.2s ease;
 }
 
-/* Responsive Design */
+/* Rest of your styles remain the same */
+
+/* Add this at the end of the file */
 @media (max-width: 768px) {
   .services-grid {
-    grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
   }
   
   .services-section {
-    padding: 2rem 1rem;
+      padding: 2rem 1rem;
+      margin-bottom: 2rem; /* Add space before footer */
   }
 }
