@@ -124,6 +124,10 @@ h1, h2 {
     transition: transform 0.9s ease;
 }
 
+.rounded-image img {
+    border-radius: 15px;
+}
+
 .rounded-image:hover {
     transform: scale(1.05); /* Increases size by 5% on hover */
 }

@@ -46,9 +46,9 @@ app.post('/api/send-email', async (req, res) => {
       const mailOptions = {
         from: process.env.EMAIL_USER,
         to: process.env.RECIPIENT_EMAIL,
-        subject: `New Contact Form Submission - ${service}`,
+        subject: `K-RenderUK New Submission - ${service}`,
         html: `
-          <h2>New Contact Form Submission</h2>
+          <h2>K-RenderUK New Submission</h2>
           <p><strong>Name:</strong> ${name}</p>
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Phone:</strong> ${phone}</p>

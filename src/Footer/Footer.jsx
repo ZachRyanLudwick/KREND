@@ -9,7 +9,7 @@ const Footer = () => {
           <h3>K-Render UK</h3>
           <p>The UK's Finest In Professional Rendering</p>
           <div className="contact-info">
-            <p>✉️ Email: info@krender.co.uk</p>
+            <p>✉️ Email: krenderuk@gmail.com</p>
           </div>
         </div>
 
