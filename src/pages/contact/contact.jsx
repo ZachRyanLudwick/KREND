@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './contact.css'
 
 const Contact = () => {
+  const [status, setStatus] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,9 +19,37 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+    setStatus('sending');
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+
+      if(response.ok) {
+        setStatus('success');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          service: '',
+          message: ''
+        })
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      setStatus('error');
+      console.error('Error:', error)
+    }
   };
 
   return (
@@ -74,11 +103,11 @@ const Contact = () => {
                 required
               >
                 <option value="">Select a Service</option>
-                <option value="krendering">K-Rendering</option>
-                <option value="external">Extermal Plastering</option>
-                <option value="colored">Colored Rendering</option>
-                <option value="interior">Interior Plastering</option>
-                <option value="other">Other Enquiry</option>
+                <option value="K-Rendering">K-Rendering</option>
+                <option value="External Plastering">External Plastering</option>
+                <option value="Colored Rendering">Colored Rendering</option>
+                <option value="Interior Plastering">Interior Plastering</option>
+                <option value="Other">Other Enquiry</option>
               </select>
             </div>
 
@@ -93,7 +122,16 @@ const Contact = () => {
               />
             </div>
 
-            <button type="submit">Send Message</button>
+            <button type="submit" disabled={status === 'sending'}>
+              {status === 'sending' ? 'Sending...' : 'Send Message'}
+            </button>
+
+            {status === 'success' && (
+              <div className="success-message">Message sent successfully!</div>
+            )}
+            {status === 'error' && (
+              <div className="error-message">Failed to send message. Please try again.</div>
+            )}
           </form>
         </div>
       </div>
@@ -101,4 +139,4 @@ const Contact = () => {
   )
 }
 
-export default Contact  // Changed from 'contact' to 'Contact'
+export default Contact 
