@@ -57,7 +57,7 @@
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
-    background-color: white;
+    background-color: #f9f9f9;
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
@@ -88,7 +88,6 @@
   
   .form-group select {
     padding: 0.8rem;
-    background-color: white;
     color: #333;
   }
 
