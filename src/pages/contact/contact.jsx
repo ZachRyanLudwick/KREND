@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './contact.css'
 
+
 const Contact = () => {
   const [status, setStatus] = useState('');
   const [formData, setFormData] = useState({
@@ -24,7 +25,7 @@ const Contact = () => {
     setStatus('sending');
 
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('https://api-j2f6l27txq-uc.a.run.app/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

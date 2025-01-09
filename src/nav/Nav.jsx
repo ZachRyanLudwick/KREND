@@ -3,12 +3,7 @@ import './nav.css'
 
 const Nav = () => {
 
-  const toggleMobileMenu = () => {
-    const navLinks = document.querySelector('.nav-links');
-    const menuBtn = document.querySelector('.mobile-menu-btn');
-    navLinks.classList.toggle('active');
-    menuBtn.classList.toggle('active');
-  };
+
   
 
   return (
@@ -19,7 +14,7 @@ const Nav = () => {
             </div>
             <ul className="nav-links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/services">Services</a></li>
+                <li><a href="/service">Services</a></li>
                 <li><a href="/about">Who We Are</a></li>
                 <li><a href="/contact">Get A Quote</a></li>
             </ul>
