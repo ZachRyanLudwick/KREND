@@ -9,11 +9,11 @@ const whoweare = () => {
                 <div className="col-md-12">
                     <h1>Who We Are</h1>
                     <p>
-                    Welcome to K-Render UK, your trusted plastering and rendering specialists proudly based in the heart of Heartfordshire. With years of experience under our belts, we’re dedicated to bringing exceptional craftsmanship to homes and businesses across the globe.
+                    Welcome to K-Render UK, your trusted plastering and rendering specialists proudly based in the heart of Heartfordshire, Bedfordshire and Bucks. With years of experience under our belts, we’re dedicated to bringing exceptional craftsmanship to homes and businesses across the globe.
 
                     At K-Render UK, we specialize in all types of rendering—whether it’s traditional sand and cement, modern silicone, acrylic, or monocouche systems, we’ve got the skills to meet your needs. Our expert plastering services are designed to give your property the flawless finish it deserves, while enhancing both its appearance and durability.
 
-                    But we’re not just about high-quality finishes. At K-Render UK, our values are the foundation of everything we do. We believe in delivering work we can be proud of, building strong relationships with our customers, and ensuring every project is completed with care, professionalism, and attention to detail. We treat your property like it’s our own—because we know quality isn’t just what you see on the surface; it’s what lies beneath.
+                    However we’re not just about high-quality finishes. At K-Render UK, our values are the foundation of everything we do. We believe in delivering work we can be proud of, building strong relationships with our customers, and ensuring every project is completed with care, professionalism, and attention to detail. We treat your property like it’s our own—because we know quality isn’t just what you see on the surface; it’s what lies beneath.
                     </p>
                     <p>Why choose K-Render UK? It’s simple. We’re committed to:</p>
                     <ul>

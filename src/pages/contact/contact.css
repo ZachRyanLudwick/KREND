@@ -117,6 +117,7 @@
     .contact-container {
       flex-direction: column;
       gap: 2rem;
+      padding: 7rem 2rem;
     }
     
     .contact-info,
