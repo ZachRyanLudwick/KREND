@@ -27,7 +27,7 @@ const Footer = () => {
 
         <div className="footer-section">
           <h3>Where We Operate</h3>
-          <p>We operate everywher in the UK serving professional rendering services</p>
+          <p>We operate everywhere in the UK serving professional rendering services</p>
           <p>Available for both residential and commercial projects</p>
         </div>
       </div>
