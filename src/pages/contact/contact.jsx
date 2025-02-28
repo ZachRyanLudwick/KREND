@@ -9,7 +9,8 @@ const Contact = () => {
     email: '',
     phone: '',
     service: '',
-    message: ''
+    message: '',
+    discountCode: ''
   });
 
   const handleChange = (e) => {
@@ -42,7 +43,8 @@ const Contact = () => {
           email: '',
           phone: '',
           service: '',
-          message: ''
+          message: '',
+          discountCode: ''
         })
       } else {
         setStatus('error');
@@ -94,6 +96,15 @@ const Contact = () => {
                onChange={handleChange}
                required
               />
+            </div>
+
+            <div className="form-group">
+              <input
+               type="text"
+               name='discountCode'
+               placeholder='Discount Code (Optional)'
+               value={formData.discountCode}
+               onChange={handleChange} />
             </div>
 
             <div className="form-group">

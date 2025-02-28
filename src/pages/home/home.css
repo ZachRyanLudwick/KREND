@@ -91,6 +91,25 @@ h1, h2 {
     gap: 2rem;
 }
 
+.banner-content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers horizontally */
+    max-width: 1200px;
+    width: 100%; /* Ensure full width */
+    margin: 0 auto; /* Centers the section itself */
+    min-height: 1vh; /* Makes it full height of viewport */
+}
+
+.banner-text-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #3a3a3a;
+    text-align: center;
+    width: 100%; /* Ensures the text takes full width of parent */
+}
+
+
 .text-content {
     flex: 1;
 }

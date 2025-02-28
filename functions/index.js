@@ -41,7 +41,12 @@ app.post('/send-email', async (req, res) => {
   try {
     console.log('Received request:', req.body);
 
-    const { name, email, phone, service, message } = req.body;
+    const { name, email, phone, service, message, disountCode } = req.body;
+
+    // Set default value for discount code if it's empty, null, or undefined
+    const finalDiscountCode = !disountCode || disountCode.trim() === '' 
+    ? 'No Code Used' 
+    : disountCode; 
 
     // Validate required fields
     if (!name || !email || !message) {
@@ -69,6 +74,7 @@ app.post('/send-email', async (req, res) => {
         <p><strong>Phone:</strong> ${phone}</p>
         <p><strong>Service:</strong> ${service}</p>
         <p><strong>Message:</strong> ${message}</p>
+        <p><strong>Discount Code:</strong> ${finalDiscountCode}</p>
       `
     };
 

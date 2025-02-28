@@ -20,21 +20,29 @@ const home = () => {
         </div>
         </section>
 
+        <div className="seperation-line"></div>
+
+        <div className="banner">
+          <section className="banner-content-section">
+            <div className="banner-text-content">
+              <h3>Fancy a discount, use web10 for a 10% discount off your whole project when you use the code in the form</h3>
+            </div>
+          </section>
+        </div>
+
         <div className="seperation-line"/>
 
         <div className="info">
           <section className="content-section">
             <div className="text-content">
               <h2>What we have to offer</h2>
-              <p>We offer a comprehensive range of plastering services
-                designed to enhance both the interior and exterior 
-                of your home. While we excel in all aspects of plastering,
-                we specialise in K-rendering—the premium solution for creating flawless,
-                durable exteriors. Our K-render service provides your home with a sleek,
-                  contemporary finish while offering long-lasting protection against the elements. 
-                  Whether you're looking to refresh the appearance of your property or improve its 
-                  insulation, our experienced team delivers top-notch results with every project. 
-                  Let us transform the exterior of your home with our expert K-rendering services.</p>
+              <p>We offer a comprehensive range of plastering services designed to enhance both the interior and exterior of your home.
+                 While we excel in all aspects of plastering, we specialise in K-rendering—the premium solution for achieving a sleek,
+                  modern finish with long-lasting durability. Our expert K-rendering not only enhances your home's appearance but also
+                   provides superior insulation and protection against the elements. Whether you're looking to refresh your property
+                    or improve its energy efficiency, our skilled team delivers flawless results every time. Plus, we back our work
+                     with a 30-year guarantee, ensuring your home stays protected and looking its best for decades. Experience the 
+                     perfect blend of quality, style, and reliability with our industry-leading K-rendering services.</p>
             </div>
             <div className="image-content">
               <img src={plasters} alt="Description of image" className="rounded-image"/>
