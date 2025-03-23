@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import './contact.css'
+import React, { useState } from 'react';
+import { getDatabase, ref, push } from 'firebase/database';
+import './contact.css';
 
 const Contact = () => {
   const [status, setStatus] = useState('');
@@ -12,7 +13,7 @@ const Contact = () => {
   });
 
   const handleChange = (e) => {
-    const {name, value} = e.target;
+    const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
       [name]: value
@@ -24,31 +25,31 @@ const Contact = () => {
     setStatus('sending');
 
     try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
+      // Get database reference
+      const db = getDatabase();
+      const contactsRef = ref(db, 'contacts');
+
+      // Add timestamp to form data
+      const submissionData = {
+        ...formData,
+        timestamp: new Date().toISOString()
+      };
+
+      // Push data to Firebase
+      await push(contactsRef, submissionData);
+
+      // Reset form and show success message
+      setStatus('success');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        service: '',
+        message: ''
       });
-
-      const result = await response.json();
-
-      if(response.ok) {
-        setStatus('success');
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          service: '',
-          message: ''
-        })
-      } else {
-        setStatus('error');
-      }
     } catch (error) {
       setStatus('error');
-      console.error('Error:', error)
+      console.error('Error:', error);
     }
   };
 
@@ -86,12 +87,12 @@ const Contact = () => {
 
             <div className="form-group">
               <input
-               type="text"
-               name='phone'
-               placeholder='Phone Number'
-               value={formData.phone}
-               onChange={handleChange}
-               required
+                type="text"
+                name='phone'
+                placeholder='Phone Number'
+                value={formData.phone}
+                onChange={handleChange}
+                required
               />
             </div>
 
@@ -136,7 +137,7 @@ const Contact = () => {
         </div>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Contact 
+export default Contact;

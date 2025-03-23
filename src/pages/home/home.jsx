@@ -26,15 +26,9 @@ const home = () => {
           <section className="content-section">
             <div className="text-content">
               <h2>What we have to offer</h2>
-              <p>We offer a comprehensive range of plastering services
-                designed to enhance both the interior and exterior 
-                of your home. While we excel in all aspects of plastering,
-                we specialise in K-rendering—the premium solution for creating flawless,
-                durable exteriors. Our K-render service provides your home with a sleek,
-                  contemporary finish while offering long-lasting protection against the elements. 
-                  Whether you're looking to refresh the appearance of your property or improve its 
-                  insulation, our experienced team delivers top-notch results with every project. 
-                  Let us transform the exterior of your home with our expert K-rendering services.</p>
+              <p>We offer a range of plastering services, specializing in K-rendering for durable, flawless exteriors. K-rendering provides a sleek, contemporary finish and long-lasting protection against the elements. It can increase property value by up to 10% due to its modern look and durability, while enhancing curb appeal and making your home more attractive to potential buyers. <br/><br/>
+
+Additionally, K-rendering improves insulation, reducing heat loss by up to 35% and lowering energy bills by keeping your home warmer in winter and cooler in summer. Whether you're looking to refresh your property, enhance insulation, or boost its value, our experienced team delivers outstanding results with every project.</p>
             </div>
             <div className="image-content">
               <img src={plasters} alt="Description of image" className="rounded-image"/>

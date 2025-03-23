@@ -87,6 +87,11 @@ nav .logo {
     animation-delay: 1.5s; /* Fourth element */
 }
 
+.nav-links li:nth-child(5) a {
+    opacity: 0;
+    animation: fadeInDown 0.5s ease forwards;
+    animation-delay: 1.8s; /* Fith element */
+}
 .nav-content .nav-links {
     display: flex;
 }
@@ -153,7 +158,7 @@ nav .logo {
   }
   
   /* Media Queries */
-  @media (max-width: 768px) {
+  @media (max-width: 931px) {
     nav .nav-content {
       display: none;
     }

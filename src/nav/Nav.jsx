@@ -21,6 +21,7 @@ const Nav = () => {
                 <li><a href="/">Home</a></li>
                 <li><a href="/services">Services</a></li>
                 <li><a href="/about">Who We Are</a></li>
+                <li><a href="/gallery">Gallery</a></li>
                 <li><a href="/contact">Get A Quote</a></li>
             </ul>
         </div>
@@ -41,6 +42,11 @@ const Nav = () => {
           <li>
           <a href="/about">
               <span className="label">About Us</span>
+            </a>
+          </li>
+          <li>
+          <a href="/gallery">
+              <span className="label">Gallery</span>
             </a>
           </li>
           <li>
