@@ -34,6 +34,7 @@ const Footer = () => {
       
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} K-Render UK. All rights reserved.</p>
+        <p>CRN: 16340588</p>
         <p className='text-right'>Designed By <a href="https://github.com/ZachRyanLudwick">APEX Ltd.</a></p>
       </div>
     </footer>
