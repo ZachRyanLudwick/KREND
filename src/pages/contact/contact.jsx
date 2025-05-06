@@ -59,7 +59,7 @@ const Contact = () => {
         <div className="contact-container">
           <div className="contact-info">
             <h1>Get in Touch</h1>
-            <p>Have a project in mind? Let's work together to bring your vision to life. Fill out the form and we'll get back to you as soon as possible.</p>
+            <p>Have a project in mind? Let’s bring your vision to life. Fill out the form below to get started. Please note that we charge a £200 fee for providing a detailed quote. This amount is fully deductible from your final bill if you choose to proceed with the work.</p>
           </div>
           
           <form className="contact-form" onSubmit={handleSubmit}>
